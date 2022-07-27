@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_alphabet - prints the alphabet in a line, no spaces between letters.
  *
  */
