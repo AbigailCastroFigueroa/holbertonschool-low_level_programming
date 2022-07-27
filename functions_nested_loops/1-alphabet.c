@@ -6,15 +6,21 @@
  */
 int main(void)
 {
-	void print_alphabet(void)
-	{
-		char a = 0;
+	print_alphabet();
+	return (0);
+}
 
-		for (a = 97; a <= 122; a++)
-		{
-			_putchar(a);
-		}
-		_putchar(10);
+/**
+ * print_alphabet - prints the alphabet in a line, no spaces between letters.
+ */
+
+void print_alphabet(void)
+{
+	int a = 0;
+
+	for (a = 97; a <= 122; a++)
+	{
+		_putchar(a);
 	}
-	return  (0);
+	_putchar(10);
 }
