@@ -18,10 +18,10 @@ int main(void)
 		else if (!(i % 5))
 			printf("Buzz ");
 
-		else if (i != 100)
-			printf("%d ", i);
+		else if (i == 100 && i % 15)
+			printf("Buzz");
 		else
-			printf("%d", i);
+			printf("%d ", i);
 	}
 	printf("\n");
 	return (0);
