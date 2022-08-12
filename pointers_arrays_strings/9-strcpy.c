@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * strcpy - copies a string pointed including the null
+ * _strcpy - copies a string pointed including the null
  * @src: original string.
  * @dest: copied string.
+ *
+ * Return: copied string.
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -16,9 +18,9 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-		for ( ; i < a; i++)
-		{
-			dest[i] = 0;
+	for ( ; i < a; i++)
+	{
+		dest[i] = 0;
 	}
 	return (dest);
 }
