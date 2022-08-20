@@ -8,7 +8,7 @@
 char *leet(char *s)
 {
 	int i, b;
-	char letters[] = {'a', 'e', 'o', 'l','t'}; /*characters to look for*/
+	char letters[] = {'a', 'e', 'o', 'l', 't'}; /*characters to look for*/
 	char numbers[] = {'4', '3', '0', '1', '7'}; /*characters replacement*/
 
 	for (i = 0; s[i] != 0; i++)
