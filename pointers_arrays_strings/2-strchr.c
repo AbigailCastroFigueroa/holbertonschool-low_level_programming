@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i] != 0; ) /*string lenght*/
 		i++;
 
-	for (x = 0; x < i; x++) /*loop to run through the string*/
+	for (x = 0; x <= i; x++) /*loop to run through the string*/
 	{
 		if (c == s[x]) /*if c is equal to the value in x pos*/
 		{
@@ -21,6 +21,6 @@ char *_strchr(char *s, char c)
 			return (s);
 		}
 	}
-	return ('\0');
+	return (0);
 }
 
