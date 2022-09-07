@@ -11,17 +11,16 @@ int **alloc_grid(int width, int height)
 {
 	int c, **ptr;
 
-	if (width <= 0 || height <= 0)
-	{
+	if (width < 1)
 		return (NULL);
-	}
-
+	if (height < 1)
+		return (NULL);
 	ptr = malloc(width * sizeof(int *));
 	for (c = 0; c < width; c++)
 	{
 		if (ptr == 0)
 		{
-			return (NULL);
+			free(ptr);
 		}
 		ptr[c] = malloc(height * sizeof(int));
 	}
