@@ -6,15 +6,6 @@
  */
 void print_name(char *name, void(*f)(char *))
 {
-	if (f == &print_name_as_is)
-	{
-		f = &print_name_as_is;
+	if (f == &print_name_as_is || f == &print_name_uppercase)
 		f(name);
-	}
-
-	if (f == &print_name_uppercase)
-	{
-		f = &print_name_uppercase;
-		f(name);
-	}
 }
