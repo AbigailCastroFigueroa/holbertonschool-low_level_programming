@@ -12,7 +12,7 @@
  */
 typedef struct op
 {
-char *op
+char *op;
 int (*f)(int, int);
 } op_t;
 int op_add(int a, int b);
