@@ -10,15 +10,18 @@
 int main(int argc, char *argv[])
 {
 	int (*ptr)(int, int);
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
-	ptr = get_op_func(argv[2]);
+	int a, b;
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit (98);
 	}
+
+	ptr = get_op_func(argv[2]);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
 	if (!ptr)
 	{
 		printf("Error\n");
