@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print list - function that prints all the elements of the list.
+ * print_list - function that prints all the elements of the list.
  * @h: list
  *
  * Return: the number of nodes
