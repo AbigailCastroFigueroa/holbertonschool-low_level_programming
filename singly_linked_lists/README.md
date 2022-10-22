@@ -18,19 +18,19 @@ As compilation method we use gcc using given flags as follow, including at the e
 
 #### Mandatory tasks
 - Task 0 - we create a function that prints all the elements in the linked list along with it's content.
---prototype used to perform this task: size_t print_list(const list_t \*h);
+>-prototype used to perform this task: size_t print_list(const list_t \*h);
 - Task 1 - create a function that only prints the amount of elements.
---prototype used to perform this task: size_t list_len(const list_t \*h);
+>-prototype used to perform this task: size_t list_len(const list_t \*h);
 - Task 2 - write a function that add a node at the beggining of the list.
---prototype used to perform this task: list_t \*add_node(const \*\*head, const char \*str);
+>-prototype used to perform this task: list_t \*add_node(const \*\*head, const char \*str);
 - Task 3 - write a function that add a node at the end of the list.
---prototype used to perform this task: list_t \*add_node_end(const \*\*head, const char \*str);
+>-prototype used to perform this task: list_t \*add_node_end(const \*\*head, const char \*str);
 - Task 4 - write a function that frees the list.
---prototype used to perform this task: void free_list(list_t \*head);
+>-prototype used to perform this task: void free_list(list_t \*head);
 
 #### Advanced task
 - Task 5 - write a function that prints before main is executed.
---prototype used to perform this task: void before_main()__attribute__((constructor));
+>-prototype used to perform this task: void before_main()__attribute__((constructor));
 
 ##### Resources used for this project:
 - https://geeksforgeeks.org/data-structures/
