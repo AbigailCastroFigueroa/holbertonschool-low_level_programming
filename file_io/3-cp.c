@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 		word_read = read(fd_filefrom, buffer, 1024);
 		if (word_read == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 		if ((write(fd_fileto, buffer, word_read) == -1))
