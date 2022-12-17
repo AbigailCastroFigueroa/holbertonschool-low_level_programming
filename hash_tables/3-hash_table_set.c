@@ -1,3 +1,4 @@
+
 #include "hash_tables.h"
 
 /**
@@ -11,16 +12,19 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *tmp, *new;
-	unsigned long int index_of_key, i;
+	unsigned long int index_of_key;
 
-	index_of_key = key_index((unsigned char *)key, ht->size);
-
+	if(ht == NULL)
+		return (0);
 	if (key == NULL)
 		return (0);
 
-	for (i = index_of_key; ht->array[i]; i++)
-	{	tmp = *ht->array;
-		if (strcmp(tmp->key, key) == 0)
+	index_of_key = key_index((unsigned char *)key, ht->size);
+
+	tmp = ht->array[index_of_key];
+	for ( ; tmp != NULL; )
+	{
+		if (strcmp(key, tmp->key) == 0)
 		{
 			free(tmp->value);
 			tmp->value = strdup(value);
@@ -36,7 +40,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(tmp);
 		return (0);
 	}
-	tmp = *ht->array;
+	new->key = strdup(key);
+	new->value = strdup(value);
 	new->next = tmp;
 	tmp = new;
 	return (1);
